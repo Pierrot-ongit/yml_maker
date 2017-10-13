@@ -1,0 +1,47 @@
+<?php
+/**
+ * Implements hook_schema().
+ *
+ */
+function yml_maker_schema() {
+  $schema['yml_maker'] = array(
+    'description' => 'Stores path and names files',
+    'fields' => array(
+      'id' => array(
+        'description' => 'The primary identifier for the record.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+
+      'file_name' => array(
+        'description' => 'The file\'s name.',
+        'type' => 'varchar',
+        'length' => 84,
+        'not null' => FALSE,
+        'default' => '',
+      ),
+
+      'file_path' => array(
+        'description' => 'The file\'s path.',
+        'type' => 'varchar',
+        'length' => 240,
+        'not null' => FALSE,
+        'default' => '',
+      ),
+      'file_description' => array(
+        'description' => 'The file\'s description.',
+        'type' => 'varchar',
+        'length' => 240,
+        'not null' => FALSE,
+        'default' => '',
+      ),
+
+    ),
+    'primary key' => array('id'),
+  );
+
+  return $schema;
+}
+
+

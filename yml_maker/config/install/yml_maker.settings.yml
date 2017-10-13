@@ -1,0 +1,7 @@
+directories_allowed:
+  directory_1:
+    name: test name 1
+    path: test path 1
+
+ban_names:
+  - routings

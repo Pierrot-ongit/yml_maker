@@ -1,0 +1,8 @@
+name: YML Maker
+type: module
+core: '8.x'
+package: YML Maker
+description: An API + UI to create and manage YML File in Drupal 8.
+version: 1.0
+configure: yml_maker.admin_settings
+

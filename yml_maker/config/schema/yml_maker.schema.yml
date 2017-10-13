@@ -1,0 +1,17 @@
+##Schema for the configuration file of yml maker module.
+#yml_maker.settings:
+#  type: config_object
+#  label: 'YML Maker Settings'
+#  mapping:
+#    directories_allowed:
+#      type: sequence
+#      label: 'Directories Path allowed'
+#      sequence:
+#        type: string
+#        label: 'Directory path'
+#    ban_names:
+#      type: sequence
+#      label: 'Files Names Banned'
+#        sequence:
+#          type: string
+#          label: 'word banned'

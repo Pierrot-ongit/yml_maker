@@ -1,0 +1,18 @@
+Notes sur les REGEX et file reader :
+
+      //$file[$key]['identSize'] = strlen($value)-strlen(ltrim($value));
+      //$file[$key]['new_line'] = ltrim($value);
+      //$file[$key]['new_line'] = preg_replace ("/^ {0,}/", "space:", $file[$key]['old_line']);  # remove space from start
+      // "/^ {0,}/"
+
+      //preg_split
+      // preg_replace_callback
+      // Dans le langage PCRE (des regex), les métacaractères qu'il faut connaître sont les suivants :
+      // # ! ^ $ ( ) [ ] { } ? + * . \ |
+      //^(accent circonflexe) : indique le début d'une chaîne ;
+      // OU : barre verticale « | »
+      // #[^0-9]# : Si vous ne voulez PAS des caractères que vous énumérez dans votre classe, vous devrez placer le symbole « ^ » au début de la classe.
+      //*(étoile) : la lettre est facultative. Elle peut apparaître 0, 1 ou plusieurs fois.
+      // +(signe plus) : la lettre est obligatoire. Elle peut apparaître 1 ou plusieurs fois.
+      // #Ay(ay|oy)*#
+

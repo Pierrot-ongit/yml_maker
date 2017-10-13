@@ -1,0 +1,22 @@
+<?php
+
+function yml_maker_install(){
+  /*
+  \Drupal::configFactory()->getEditable('yml_maker_ban_names')->set('routings'),
+   \Drupal::configFactory()->getEditable('yml_maker_ban_names')->set('routings'),
+    ->save();**/
+  // Set default values for config which require dynamic values.
+  \Drupal::configFactory()->getEditable('idevels_config_example.settings')
+    ->set('some_data2', \Drupal::configFactory()->getEditable('system.site')->get('name'))
+    ->save();
+
+  $directories_allowed = [
+    ['name' => 'test name 1', 'path' => '/test/path/1'],
+    ['name' => 'test name 2', 'path' => '/test/path/2'],
+
+  ];
+
+  \Drupal::configFactory()->getEditable('yml_maker.settings')
+    ->set('directories_allowed', $directories_allowed)
+    ->save();
+}

@@ -1,0 +1,27 @@
+yml_maker.admin_settings:
+  title: 'YML Maker Settings'
+  description: 'Control the settings of the YML Maker'
+  route_name: yml_maker.admin_settings
+  parent: system.admin_config_ui
+  weight: 10
+
+yml_maker.list:
+  title: 'YML Maker'
+  description: 'Manager for YML Files'
+  route_name: yml_maker.list
+  parent: system.admin_structure
+  weight: 10
+
+yml_maker.file_saver:
+  title: 'YML Maker File Saver'
+  description: 'File Saver for YML Files'
+  route_name: yml_maker.file_saver
+  parent: yml_maker.list
+  weight: 10
+
+yml_maker.file_uploader:
+  title: 'YML Maker File Uploader'
+  description: 'File Uploader for YML Files'
+  route_name: yml_maker.file_uploader
+  parent: yml_maker.list
+  weight: 10

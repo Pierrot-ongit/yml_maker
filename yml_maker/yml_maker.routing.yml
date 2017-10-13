@@ -1,0 +1,47 @@
+yml_maker.admin_settings:
+  path: '/admin/config/content/yml_maker'
+  defaults:
+    _form: '\Drupal\yml_maker\Form\YMLMakerSettingsForm'
+    _title: 'YML Maker Settings'
+  requirements:
+    _permission: 'administer yml_maker'
+
+yml_maker.list:
+  path: '/admin/structure/yml_maker'
+  defaults:
+    _form: '\Drupal\yml_maker\Form\YMLMakerEditorForm'
+    _title: 'YML Maker Editor'
+  requirements:
+    _permission: 'access yml_maker'
+
+yml_maker.file_saver:
+  path: '/admin/structure/yml_maker/add'
+  defaults:
+    _form: '\Drupal\yml_maker\Form\FileSaverForm'
+    _title: 'YML Maker File Saver'
+  requirements:
+    _permission: 'access yml_maker'
+
+yml_maker.file_uploader:
+  path: '/admin/structure/yml_maker/upload'
+  defaults:
+    _form: '\Drupal\yml_maker\Form\FileUploaderForm'
+    _title: 'YML Maker File Uploader'
+  requirements:
+    _permission: 'access yml_maker'
+
+yml_maker.builder:
+  path: '/admin/structure/yml_maker/manage/{fid}'
+  defaults:
+    _form: '\Drupal\yml_maker\Form\BuilderForm'
+    _title: 'YML Maker Builder'
+  requirements:
+    _permission: 'access yml_maker'
+
+yml_maker.delete_form:
+  path: '/admin/structure/yml_maker/delete/{fid}'
+  defaults:
+    _form: '\Drupal\yml_maker\Form\DeleteForm'
+    _title: 'DeleteForm'
+  requirements:
+    _permission: 'access yml_maker'

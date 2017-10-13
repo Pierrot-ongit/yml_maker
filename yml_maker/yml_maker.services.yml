@@ -1,0 +1,14 @@
+# yml_maker.services.yaml
+services:
+  yml_maker.file_reader:
+    class: Drupal\yml_maker\Service\FileReaderService
+    arguments:
+      - '@keyvalue'
+
+  yml_maker.dbmanager:
+    class: Drupal\yml_maker\Service\DBManagerService
+    arguments: []
+
+  yml_maker.browser:
+    class: Drupal\yml_maker\Service\BrowserService
+    arguments: []

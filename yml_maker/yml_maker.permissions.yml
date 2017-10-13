@@ -1,0 +1,7 @@
+access yml_maker:
+  title: 'Access YML Maker'
+  description: 'Acces to the YML Maker Builder Form.'
+administer yml_maker:
+  title: 'Administer YML Maker Settings'
+  description: 'Access the YML Maker administrative settings page.'
+  restrict access: true
